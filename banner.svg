@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Saray Rodríguez · Estudiante de DAM · Móstoles">
+  <defs>
+    <clipPath id="marco">
+      <rect width="1200" height="320" rx="20"/>
+    </clipPath>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d1b4e"/>
+      <stop offset="55%" stop-color="#6e3a7a"/>
+      <stop offset="100%" stop-color="#e98fb0"/>
+    </linearGradient>
+    <radialGradient id="sol" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe3ec"/>
+      <stop offset="70%" stop-color="#ffb3cb"/>
+      <stop offset="100%" stop-color="#ff8fb8" stop-opacity="0.6"/>
+    </radialGradient>
+    <linearGradient id="nombre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd6e5"/>
+      <stop offset="50%" stop-color="#ff9cc2"/>
+      <stop offset="100%" stop-color="#d9b3ff"/>
+    </linearGradient>
+    <linearGradient id="linea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff8fb8"/>
+      <stop offset="100%" stop-color="#b58cff"/>
+    </linearGradient>
+    <filter id="sombra" x="-10%" y="-30%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1a0b2e" flood-opacity="0.6"/>
+    </filter>
+    <path id="petalo" d="M0 0 C4 -7 13 -7 14 0 C13 7 4 7 0 0 Z" fill="#ffc6d9"/>
+  </defs>
+
+  <g clip-path="url(#marco)">
+    <!-- Cielo al atardecer -->
+    <rect width="1200" height="320" fill="url(#cielo)"/>
+
+    <!-- Estrellas -->
+    <g fill="#ffe3ec" opacity="0.7">
+      <circle cx="320" cy="40" r="1.6"/>
+      <circle cx="455" cy="70" r="1.2"/>
+      <circle cx="760" cy="35" r="1.5"/>
+      <circle cx="840" cy="80" r="1.1"/>
+      <circle cx="60" cy="60" r="1.3"/>
+      <circle cx="1040" cy="50" r="1.2"/>
+    </g>
+
+    <!-- Sol -->
+    <circle cx="975" cy="165" r="80" fill="url(#sol)" opacity="0.9"/>
+
+    <!-- Monte Fuji -->
+    <path d="M730 320 L925 185 Q960 165 995 185 L1200 320 Z" fill="#4a2a5e"/>
+    <path d="M898 204 L925 185 Q960 165 995 185 L1022 204 L1003 199 L986 212 L962 198 L942 213 L921 199 Z" fill="#fde8f0"/>
+
+    <!-- Colinas -->
+    <path d="M0 290 Q200 255 420 285 T820 280 T1200 295 L1200 320 L0 320 Z" fill="#3b2150"/>
+
+    <!-- Torii -->
+    <g fill="#e0457b">
+      <path d="M78 148 Q165 134 252 148 L247 161 Q165 151 83 161 Z"/>
+      <rect x="100" y="182" width="130" height="9" rx="2"/>
+      <rect x="160" y="160" width="10" height="22"/>
+      <rect x="122" y="158" width="12" height="150"/>
+      <rect x="196" y="158" width="12" height="150"/>
+    </g>
+    <rect x="80" y="144" width="170" height="4" rx="2" fill="#2d1b4e" opacity="0.5"/>
+
+    <!-- Sello hanko: サライ -->
+    <g>
+      <rect x="1110" y="22" width="58" height="88" rx="6" fill="none" stroke="#ff8fb8" stroke-width="3"/>
+      <g font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP','Meiryo',sans-serif" font-size="22" font-weight="700" fill="#ff8fb8" text-anchor="middle">
+        <text x="1139" y="52">サ</text>
+        <text x="1139" y="78">ラ</text>
+        <text x="1139" y="103">イ</text>
+      </g>
+    </g>
+
+    <!-- Saludo en japonés -->
+    <text x="600" y="92" text-anchor="middle" font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP','Meiryo',sans-serif" font-size="20" letter-spacing="5" fill="#ffc2d6">こんにちは、サライです</text>
+
+    <!-- Nombre -->
+    <text x="600" y="168" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="70" font-weight="800" fill="url(#nombre)" filter="url(#sombra)">Saray Rodríguez</text>
+
+    <!-- Subtítulo -->
+    <rect x="395" y="192" width="410" height="42" rx="21" fill="#ffffff" fill-opacity="0.10" stroke="#ffb3cb" stroke-opacity="0.8"/>
+    <text x="600" y="219" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" fill="#ffe4ee">Estudiante de DAM · 2º curso · Móstoles</text>
+
+    <!-- Pétalos de sakura cayendo -->
+    <g opacity="0.9">
+      <g>
+        <use href="#petalo"/>
+        <animateTransform attributeName="transform" type="translate" values="300 -20; 380 340" dur="11s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <use href="#petalo" transform="rotate(40)"/>
+        <animateTransform attributeName="transform" type="translate" values="520 -20; 470 340" dur="13s" begin="-4s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <use href="#petalo" transform="rotate(-25) scale(0.8)"/>
+        <animateTransform attributeName="transform" type="translate" values="760 -20; 830 340" dur="10s" begin="-7s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <use href="#petalo" transform="rotate(70) scale(0.9)"/>
+        <animateTransform attributeName="transform" type="translate" values="40 -20; 120 340" dur="12s" begin="-2s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <use href="#petalo" transform="rotate(15) scale(0.7)"/>
+        <animateTransform attributeName="transform" type="translate" values="1060 -20; 1000 340" dur="14s" begin="-9s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <use href="#petalo" transform="rotate(-60)"/>
+        <animateTransform attributeName="transform" type="translate" values="660 -20; 720 340" dur="15s" begin="-11s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- Línea inferior -->
+    <rect x="0" y="315" width="1200" height="5" fill="url(#linea)"/>
+  </g>
+</svg>
